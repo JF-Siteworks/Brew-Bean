@@ -50,7 +50,7 @@
 }
 
 .item:hover {
-  transform: scale(1.15) !important;
+  transform: scale(1.03) !important;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
