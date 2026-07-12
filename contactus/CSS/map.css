@@ -1,0 +1,96 @@
+.find-us {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #4b2e1e;
+  padding: 0;
+  font-family: "Sour Gummy", sans-serif;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.find-us::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #d2691e;
+  margin-top: 0;
+  justify-self: center;
+}
+
+.map {
+  position: static;
+  width: 100%;
+  height: 32.75rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+
+.map iframe {
+  border-radius: 24px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.map-overlay {
+  position: absolute;
+  width: 65%;
+  height: 500px;
+  background-color: #4b2e1e99;
+  border-radius: 24px;
+  pointer-events: none;
+  border: none;
+}
+
+.map-overlay:hover {
+  transform: scale(0);
+}
+
+.map-disclaimer {
+  text-align: center;
+  font-size: 0.6rem;
+  color: #4b2e1e;
+  z-index: 1000;
+  transform: translateY(-0px);
+  font-family: "Sour Gummy", sans-serif;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .map {
+    height: 90vw;
+    width: 90vw;
+    max-width: 90vw;
+    max-height: 90vw;
+    min-width: 0;
+    min-height: 0;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .map iframe {
+    width: 90vw !important;
+    height: 90vw !important;
+    max-width: 90vw;
+    max-height: 90vw;
+    min-width: 0;
+    min-height: 0;
+    position: static;
+    border-radius: 24px;
+    box-sizing: border-box;
+  }
+
+  .map-overlay {
+    display: none;
+  }
+
+  .map-disclaimer {
+    transform: translateY(-6px);
+    padding: 0 5px 5px 5px;
+  }
+}

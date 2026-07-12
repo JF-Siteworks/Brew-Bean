@@ -1,0 +1,136 @@
+<!-- Designed and Developed by James Forde and JF Siteworks | www.jfsiteworks.com -->
+<!-- © 2025 JF Siteworks™. All rights reserved. -->
+<!-- Bean & Brew is a fictional brand created solely for portfolio and demonstration purposes. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../body.css" />
+    <link rel="stylesheet" href="CSS/navbar.css" />
+    <link rel="stylesheet" href="CSS/contact-form.css" />
+    <link rel="stylesheet" href="CSS/map.css" />
+    <link rel="stylesheet" href="CSS/info.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <nav id="navbar" class="navbar">
+      <img
+        src="../images/hamburger.png"
+        alt="Menu"
+        id="hamburgerToggle"
+        class="hamburger"
+      />
+      <div class="logo">Bean & Brew</div>
+      <ul class="nav-links">
+        <li><a href="../homepage/home.html">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="../contactus/contact.html">Contact</a></li>
+      </ul>
+      <a href="#" class="order-btn-nav">Order Now</a>
+    </nav>
+
+    <div class="sidebar" id="mobileSidebar">
+      <button id="closeBtn" class="close-btn">x</button>
+      <a href="../homepage/home.html">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">About</a>
+      <a href="../contactus/contact.html">Contact</a>
+    </div>
+
+    <div class="sidebar-overlay hidden" id="sidebarOverlay"></div>
+
+    <main>
+      <div class="form-container">
+        <h2 class="get-in-touch-title">Get in Touch</h2>
+        <form class="custom-form">
+          <div class="left-inputs">
+            <input type="text" name="firstName" placeholder="First Name" />
+            <input type="text" name="surname" placeholder="Surname" />
+            <input type="email" name="email" placeholder="Email Address" />
+          </div>
+          <div class="right-input">
+            <textarea name="message" placeholder="Message"></textarea>
+          </div>
+        </form>
+        <button type="submit" class="submit-btn">Submit</button>
+      </div>
+
+      <div class="find-us"><p>Find Us</p></div>
+
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4967.361127708328!2d-0.12720032334336104!3d51.50072917181185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c38c8cd1d9%3A0xb78f2474b9a45aa9!2sBig%20Ben!5e0!3m2!1sen!2sie!4v1751792413101!5m2!1sen!2sie"
+          width="65%"
+          height="500px"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        <div class="map-overlay"></div>
+      </div>
+
+      <p class="map-disclaimer">
+        Map location (Big Ben) is for demonstration and portfolio purposes only
+        and does not reflect the actual business address.
+      </p>
+
+      <div class="info">
+        <div class="info-title">
+          <div class="title"><p>Opening Hours</p></div>
+          <div class="title"><p>Contact Us</p></div>
+        </div>
+        <div class="information">
+          <p>
+            <span class="day">Monday</span>:
+            <span class="time">8:00 AM - 4:00 PM</span><br />
+            <span class="day">Tuesday</span>:
+            <span class="time">8:00 AM - 4:00 PM</span><br />
+            <span class="day">Wednesday</span>:
+            <span class="time">9:00 AM - 4:00 PM</span><br />
+            <span class="day">Thursday</span>:
+            <span class="time">8:00 AM - 4:00 PM</span><br />
+            <span class="day">Friday</span>:
+            <span class="time">8:00 AM - 4:00 PM</span><br />
+            <span class="day">Saturday</span>:
+            <span class="time">8:00 AM - 4:00 PM</span><br />
+            <span class="day">Sunday</span>: <span class="time">10:00 AM - 3:00 PM</span
+            ><br />
+            <span class="day">Bank Holidays</span>:
+            <span class="time">Closed</span>
+          </p>
+          <p>hello</p>
+        </div>
+
+      </div>
+
+      <footer>
+        <p>© 2025 <strong>JF Siteworks™</strong>. All rights reserved.</p>
+        <p>
+          <em
+            >This website and all associated content are entirely fictional and
+            created for portfolio purposes only.</em
+          >
+        </p>
+      </footer>
+
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>

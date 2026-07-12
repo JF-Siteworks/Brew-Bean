@@ -1,0 +1,60 @@
+.info {
+  width: 100%;
+  background-color: orangered;
+  padding-top: 2.5rem;
+  margin-top: 10px;
+  height: fit-content;
+}
+
+.info-title {
+  width: 100%;
+  background-color: aqua;
+  height: fit-content;
+  display: flex;
+  font-size: 2.5rem;
+  font-family: "Sour Gummy", sans-serif;
+  color: #4b2e1e;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.information {
+  width: 100%;
+  background-color: blueviolet;
+  height: fit-content;
+  display: flex;
+}
+
+.title {
+  flex: 1;
+  text-align: center;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #d2691e;
+  margin-top: 0;
+  justify-self: center;
+}
+
+.information p {
+  flex: 1;
+  padding: 0 30px;
+  font-size: 1rem;
+  text-align: left;
+  font-family: 'Nunito', sans-serif;
+}
+
+.day {
+  color: #d2691e;
+  font-weight: bold;
+  font-family: 'Sour Gummy', sans-serif;
+}
+
+.time {
+  color: #4b2e1e;
+  font-family: 'Nunito', sans-serif;
+}

@@ -1,0 +1,125 @@
+.reviews {
+  width: 100%;
+  min-height: 350px;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 50px 40px 50px;
+  gap: 80px;
+  align-items: stretch;
+  position: relative;
+  overflow: visible;
+}
+
+.reviews-text {
+  font-size: 2.5rem;
+  font-family: "Sour Gummy", sans-serif;
+  color: #4b2e1e;
+}
+
+.reviews-text::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #d2691e;
+  margin-top: 0;
+  margin-bottom: 20px;
+  justify-self: center;
+}
+
+.review {
+  flex: 1;
+  text-align: center;
+  border-radius: 12px;
+  min-height: 100%;
+  border: 2px solid #d2691e;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 10;
+  background-color: #f5f0e6;
+}
+
+.review p {
+  font-size: 1.15rem;
+  font-family: "Nunito", sans-serif;
+  color: #4b2e1e;
+  font-weight: 600;
+}
+
+.reviews::before,
+.reviews::after {
+  font-family: Georgia, serif;
+  font-size: 5rem;
+  color: #d2691e;
+  position: absolute;
+  opacity: 0.2;
+  line-height: 1;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.reviews::before {
+  content: "“";
+  top: -30px;
+  left: 10px;
+}
+
+.reviews::after {
+  content: "”";
+  bottom: -30px;
+  right: 10px;
+}
+
+.review:hover {
+  transform: scale(1.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .reviews {
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 12px;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+
+  .review {
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .reviews::before,
+  .reviews::after {
+    font-family: Georgia, serif;
+    font-size: 4rem;
+    color: #d2691e;
+    position: absolute;
+    opacity: 0.2;
+    line-height: 1;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .reviews::before {
+    content: "“";
+    top: -30px;
+    left: 10px;
+  }
+
+  .reviews::after {
+    content: "”";
+    bottom: -25px;
+    right: 10px;
+  }
+
+  .review:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    display: block;
+  }
+}
