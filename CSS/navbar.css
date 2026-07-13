@@ -221,4 +221,8 @@
   .menu-toggle.active span:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -6px);
   }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
 }
