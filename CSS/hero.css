@@ -1,0 +1,138 @@
+/* =====================
+   HERO SECTION
+===================== */
+
+.hero {
+  min-height: calc(100vh - 80px);
+  background-image: url("../images/hero-coffee.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(245, 240, 230, 0.95),
+    rgba(245, 240, 230, 0.55),
+    rgba(245, 240, 230, 0.15)
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  display: block;
+  color: var(--accent);
+}
+
+.hero-text {
+  font-size: 1.15rem;
+  max-width: 550px;
+  margin-bottom: 35px;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-buttons a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-outline {
+  padding: 12px 28px;
+  border: 2px solid var(--primary);
+  border-radius: 30px;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+.opening-card {
+  margin-top: 45px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 25px;
+  background-color: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.opening-card i {
+  font-size: 1.8rem;
+  color: var(--accent);
+}
+
+.opening-card strong {
+  font-family: var(--heading-font);
+  font-size: 1.2rem;
+}
+
+.opening-card p {
+  margin: 0;
+  color: #7a5a46;
+}
+
+/* =====================
+   MOBILE HERO
+===================== */
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 90vh;
+    background-position: center;
+  }
+
+  .hero-overlay {
+    background: rgba(245, 240, 230, 0.85);
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .opening-card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
