@@ -1,0 +1,22 @@
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.information {
+  padding: 20px;
+  display: flex;
+  flex-direction: column; 
+}
+
+.information h2 {
+  font-family: 'Sour Gummy', sans-serif;
+  color: #4b2e1e;
+  font-size: 2.5rem;
+  justify-self: center;
+}
+
+.opening {
+  text-align: left;
+  max-width: fit-content;
+}

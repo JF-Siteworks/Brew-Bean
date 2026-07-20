@@ -1,0 +1,60 @@
+.ctamenu {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 25px;
+    padding-bottom: 50px;
+}
+
+.ctamenu-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.ctamenu-container a {
+    font-size: 2rem;
+    font-family: "Sour Gummy", sans-serif;
+    color: #4b2e1e;
+    text-decoration: none;
+    border: 3px solid #d2691e;
+    border-radius: 999px;
+    padding: 10px 20px;
+    transition: transform 0.3s ease;
+    font-weight: 600;
+    position: relative;
+}
+
+.ctamenu-container a::after {
+  content: "";
+  position: absolute;
+  left: 15%;
+  bottom: 0.75rem;
+  width: 70%;
+  height: 2px;
+  background-color: #4b2e1e;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.ctamenu-container a:hover {
+  transform: scale(1.1);
+}
+
+.ctamenu-container a:hover::after {
+  transform: scaleX(1);
+}
+
+@media (max-width: 768px) {
+  .ctamenu-container a:hover {
+    transform: none !important;
+  }
+
+  .ctamenu-container a:hover::after {
+    transform: scaleX(0);
+  }
+}

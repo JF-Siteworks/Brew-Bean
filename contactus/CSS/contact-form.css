@@ -1,0 +1,162 @@
+.form-container {
+  width: 100%;
+  margin: 70px auto 0 auto;
+  padding: 2.5rem 2rem;
+  padding-bottom: 2.5rem;
+  font-family: "Sour Gummy", sans-serif;
+}
+
+.custom-form {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  align-items: stretch;
+  font-family: "Sour Gummy", sans-serif;
+}
+
+.left-inputs,
+.right-input {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-end;
+  font-family: "Sour Gummy", sans-serif;
+}
+
+.left-inputs {
+  justify-content: flex-end;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.right-input {
+  justify-content: flex-start;
+  gap: 0;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.left-inputs input {
+  padding: 1rem 1.5rem;
+  border: 3px solid #d05f00;
+  border-radius: 999px;
+  font-size: 1rem;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+}
+
+.right-input textarea {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  padding: 1rem 1.5rem;
+  border: 3px solid #d05f00;
+  border-radius: 40px;
+  font-size: 1rem;
+  resize: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.left-inputs input,
+.right-input textarea {
+  font-family: "Sour Gummy", sans-serif;
+  color: #4b2e1e;
+}
+
+.left-inputs input::placeholder,
+.right-input textarea::placeholder {
+  font-family: "Sour Gummy", sans-serif;
+  color: #4b2e1e59;
+}
+
+.submit-btn {
+  margin-top: 1.5rem;
+  padding: 1rem 2.5rem;
+  background: #d05f00;
+  color: #f5f0e6;
+  border: none;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s;
+  transition: transform 0.3s ease;
+  width: 25%;
+  z-index: 102;
+}
+.submit-btn:hover {
+  transform: scale(1.2);
+}
+
+.submit-btn::after {
+  content: "";
+  position: absolute;
+  left: 15%;
+  bottom: 13px;
+  width: 70%;
+  height: 2px;
+  background-color: #f5f0e6;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  pointer-events: none;
+  display: block;
+}
+
+.submit-btn:hover::after {
+  transform: scaleX(1);
+}
+
+.get-in-touch-title {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Sour Gummy", sans-serif;
+  color: #4b2e1e;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.get-in-touch-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #d2691e;
+  margin-top: 0;
+  justify-self: center;
+}
+
+@media (max-width: 700px) {
+  .form-container {
+    padding: 1.2rem 0.5rem;
+  }
+  .custom-form {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+  .left-inputs,
+  .right-input {
+    align-items: stretch;
+    width: 100%;
+  }
+  .left-inputs input,
+  .right-input textarea {
+    width: 100%;
+    font-size: 0.98rem;
+    padding: 0.8rem 1rem;
+  }
+  .right-input textarea {
+    min-height: 140px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1rem;
+  }
+}
